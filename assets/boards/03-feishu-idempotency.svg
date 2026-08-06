@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fff"/>
+  <style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111}.title{font-size:30px;font-weight:600}.sub{font-size:18px;fill:#666}.box{fill:#fff;stroke:#111;stroke-width:2}</style>
+  <text x="72" y="82" class="sub">03 / PUBLISH</text><text x="72" y="132" class="title">source_url 是飞书回写的幂等键</text>
+  <circle cx="230" cy="335" r="85" fill="#2F6BFF"/><text x="230" y="325" text-anchor="middle" font-size="26" font-weight="600" fill="#fff">source_url</text><text x="230" y="360" text-anchor="middle" font-size="18" fill="#fff">规范化</text>
+  <path d="M315 335H455" stroke="#2F6BFF" stroke-width="3"/><path d="M455 335l-16-10v20z" fill="#2F6BFF"/>
+  <rect x="455" y="270" width="260" height="130" class="box"/><text x="585" y="325" text-anchor="middle" font-size="26" font-weight="600">创建 / 更新</text><text x="585" y="360" text-anchor="middle" class="sub">按 URL 匹配</text>
+  <path d="M715 335H855" stroke="#2F6BFF" stroke-width="3"/><path d="M855 335l-16-10v20z" fill="#2F6BFF"/>
+  <rect x="855" y="270" width="260" height="130" class="box"/><text x="985" y="325" text-anchor="middle" font-size="26" font-weight="600">写后回读</text><text x="985" y="360" text-anchor="middle" class="sub">核对 5 个关键字段</text>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "来源、正文、证据三层门禁决定可引用性", "composition": "layered-architecture", "focus_node": "evidence"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "url", "type": "plane", "label": "官方 URL", "importance": 4},
+    {"id": "body", "type": "cube", "label": "正文完整", "importance": 5},
+    {"id": "evidence", "type": "cube", "label": "可追溯证据", "importance": 5}
+  ],
+  "edges": [{"from": "url", "to": "body", "relation": "域名与正文"}, {"from": "body", "to": "evidence", "relation": "标题日期来源"}]
+}

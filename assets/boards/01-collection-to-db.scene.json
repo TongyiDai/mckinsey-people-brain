@@ -1,0 +1,11 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "官方来源经过质量门禁后进入 Agent 数据库", "composition": "input-process-output", "focus_node": "db"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "official", "type": "plane", "label": "官方 MBB 页面", "importance": 4},
+    {"id": "gate", "type": "cube", "label": "质量门禁", "importance": 5},
+    {"id": "db", "type": "cube", "label": "Agent 数据库", "importance": 5}
+  ],
+  "edges": [{"from": "official", "to": "gate", "relation": "采集与校验"}, {"from": "gate", "to": "db", "relation": "构建与索引"}]
+}

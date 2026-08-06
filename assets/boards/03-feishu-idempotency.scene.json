@@ -1,0 +1,11 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "规范化 source_url 让飞书回写可重跑", "composition": "input-process-output", "focus_node": "readback"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "key", "type": "point", "label": "source_url", "importance": 5},
+    {"id": "write", "type": "cube", "label": "创建 / 更新", "importance": 4},
+    {"id": "readback", "type": "cube", "label": "写后回读", "importance": 5}
+  ],
+  "edges": [{"from": "key", "to": "write", "relation": "幂等键"}, {"from": "write", "to": "readback", "relation": "核对字段"}]
+}

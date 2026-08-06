@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fff"/>
+  <style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111}.title{font-size:30px;font-weight:600}.sub{font-size:18px;fill:#666}.box{fill:#fff;stroke:#111;stroke-width:2}</style>
+  <text x="72" y="82" class="sub">04 / TRACEABILITY</text><text x="72" y="132" class="title">原始快照、清洗记录、索引数据库构成证据闭环</text>
+  <rect x="170" y="250" width="230" height="140" class="box"/><text x="285" y="310" text-anchor="middle" font-size="26" font-weight="600">原始快照</text><text x="285" y="350" text-anchor="middle" class="sub">HTML / 状态</text>
+  <path d="M400 320H485" stroke="#2F6BFF" stroke-width="3"/><path d="M485 320l-16-10v20z" fill="#2F6BFF"/>
+  <rect x="485" y="250" width="230" height="140" class="box"/><text x="600" y="310" text-anchor="middle" font-size="26" font-weight="600">清洗记录</text><text x="600" y="350" text-anchor="middle" class="sub">主题 / 失败原因</text>
+  <path d="M715 320H800" stroke="#2F6BFF" stroke-width="3"/><path d="M800 320l-16-10v20z" fill="#2F6BFF"/>
+  <rect x="800" y="250" width="230" height="140" fill="#2F6BFF"/><text x="915" y="310" text-anchor="middle" font-size="26" font-weight="600" fill="#fff">可检索索引</text><text x="915" y="350" text-anchor="middle" font-size="18" fill="#fff">JSON / SQLite</text>
+  <path d="M915 390v72H285v-72" fill="none" stroke="#2F6BFF" stroke-width="2" stroke-dasharray="8 8"/><text x="600" y="505" text-anchor="middle" class="sub">manifest 连接每一次运行</text>
+</svg>

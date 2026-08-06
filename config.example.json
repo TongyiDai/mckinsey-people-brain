@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "firm": "McKinsey",
+      "domains": ["mckinsey.com"],
+      "seed_urls": ["https://www.mckinsey.com/featured-insights/people-and-organizational-performance"]
+    },
+    {
+      "firm": "BCG",
+      "domains": ["bcg.com"],
+      "seed_urls": ["https://www.bcg.com/capabilities/people-organization"]
+    },
+    {
+      "firm": "Bain",
+      "domains": ["bain.com"],
+      "seed_urls": ["https://www.bain.com/insights/"]
+    }
+  ],
+  "keywords": ["talent management", "skills", "leadership", "performance management", "future of work", "people analytics"],
+  "min_body_chars": 800,
+  "request": {"timeout_seconds": 30, "max_retries": 2, "delay_seconds": 1.0}
+}

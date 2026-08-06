@@ -1,0 +1,11 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "原始快照、清洗记录、索引数据库组成证据闭环", "composition": "layered-architecture", "focus_node": "index"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "raw", "type": "plane", "label": "原始快照", "importance": 4},
+    {"id": "clean", "type": "cube", "label": "清洗记录", "importance": 4},
+    {"id": "index", "type": "cube", "label": "可检索索引", "importance": 5}
+  ],
+  "edges": [{"from": "raw", "to": "clean", "relation": "抽取与标注"}, {"from": "clean", "to": "index", "relation": "JSON CSV SQLite"}]
+}

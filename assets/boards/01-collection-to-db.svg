@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fff"/>
+  <style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111} .label{font-size:28px;font-weight:600}.sub{font-size:18px;fill:#666}.box{fill:#fff;stroke:#111;stroke-width:2}.accent{fill:#2F6BFF;stroke:#2F6BFF}</style>
+  <text x="72" y="82" class="sub">01 / PIPELINE</text>
+  <text x="72" y="132" class="label">官方来源 → 质量门禁 → Agent 数据库</text>
+  <rect x="80" y="260" width="250" height="120" class="box"/>
+  <text x="205" y="315" text-anchor="middle" class="label">官方 MBB 页面</text><text x="205" y="350" text-anchor="middle" class="sub">发现 / 抓取 / 快照</text>
+  <path d="M330 320H470" stroke="#2F6BFF" stroke-width="3"/><path d="M470 320l-16-10v20z" fill="#2F6BFF"/>
+  <rect x="470" y="240" width="260" height="160" class="accent"/>
+  <text x="600" y="315" text-anchor="middle" font-size="30" font-weight="600" fill="#fff">质量门禁</text><text x="600" y="352" text-anchor="middle" font-size="18" fill="#fff">URL / 正文 / 证据</text>
+  <path d="M730 320H870" stroke="#2F6BFF" stroke-width="3"/><path d="M870 320l-16-10v20z" fill="#2F6BFF"/>
+  <rect x="870" y="260" width="250" height="120" class="box"/>
+  <text x="995" y="315" text-anchor="middle" class="label">Agent 数据库</text><text x="995" y="350" text-anchor="middle" class="sub">JSON / CSV / SQLite</text>
+</svg>

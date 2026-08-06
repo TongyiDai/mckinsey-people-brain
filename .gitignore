@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+data/
+runs/
+outputs/
+*.sqlite
+*.db
+*.html
+*.jsonl
+!config.example.json
