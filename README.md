@@ -4,6 +4,8 @@
 
 *200W token 挖来的 MBB 人力顾问，10 年工作经验，关注人才、组织、AI 转型。*
 
+**MBB 人才组织洞见引擎**
+
 这是一套可复跑的 Codex Skill：从 McKinsey、BCG、Bain 官方网站发现人才管理相关内容，完成正文抽取和质量门禁，再构建带来源、状态、主题和全文索引的 Agent 数据库。飞书回写作为独立发布适配器，支持幂等写入和写后回读。
 
 <p align="center"><img src="assets/boards/01-collection-to-db.svg" alt="官方来源经过质量门禁后进入 Agent 数据库" width="960"></p>
@@ -64,6 +66,8 @@ assets/boards/                   Geometry Blue 语义图示及源描述
 ```
 
 ## 安全边界
+
+本项目是独立开源 Skill，与 McKinsey & Company、BCG 或 Bain & Company 无隶属、背书或授权关系；“MBB”仅指来自三家机构公开官网的来源集合。
 
 仓库不包含网页原始快照、个人飞书数据、Base/Wiki 标识、访问令牌、Cookie、租户信息或本地路径。运行时配置应通过私有项目文件、环境变量或凭据管理器注入。
 
