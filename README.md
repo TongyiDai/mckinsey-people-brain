@@ -1,5 +1,3 @@
-> “If I have seen farther, it is by standing on the shoulders of giants.” — Isaac Newton, 1676，[Newton Project](https://www.newtonproject.ox.ac.uk/view/texts/normalized/OTHE00101)
-
 # 麦肯锡人力大脑
 
 *200W token 挖来的 MBB 人力顾问，10 年工作经验，关注人才、组织、AI 转型。*
