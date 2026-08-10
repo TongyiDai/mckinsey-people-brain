@@ -1,8 +1,28 @@
+> “Research is formalized curiosity.” — Zora Neale Hurston
+
 # 麦肯锡人力大脑
 
 *200W token 挖来的 MBB 人力顾问，10 年工作经验，关注人才、组织、AI 转型。*
 
 这是一套可复跑的 Codex Skill：从 McKinsey、BCG、Bain 官方网站发现人才管理相关内容，完成正文抽取和质量门禁，再构建带来源、状态、主题和全文索引的 Agent 数据库。飞书回写作为独立发布适配器，支持幂等写入和写后回读。
+
+## Agent 使用契约（运行前必读）
+
+`SKILL.md` 负责总流程，`references/data-contract.md` 负责记录状态，`references/feishu-publish.md` 负责发布边界。Agent 每次运行先确认任务阶段、运行目录、来源范围和是否需要飞书发布。
+
+| 项目 | 规则 |
+| --- | --- |
+| 触发 | 搜集 MBB 官方人力内容、刷新内容库、构建 Agent 数据库、增量发布到飞书 |
+| 首步 | 读取来源配置与上次 manifest，确认 `run_id`、官方域名和正文门槛 |
+| 输入 | `targets.json`、`fetched.json`、可选历史 corpus、主题配置和明确的发布目标 |
+| 输出 | 带 `source_url`、状态、失败原因、主题和正文的 JSON/CSV/SQLite；发布结果另行报告 |
+| 来源边界 | 最终记录只接受 McKinsey、BCG、Bain 官方域名；搜索结果和转载页只作发现线索 |
+| 读写 | 采集和构建默认写本地运行产物；飞书写入需要用户授权、目标确认和 dry-run |
+| 身份边界 | 个人飞书与公司飞书分开核验；不提交 Base/Wiki 标识、租户信息、Token 或原始快照 |
+| 降级 | 受限、无正文、HTTP 错误和认证失败保留状态与原因，不用摘要或猜测补正文 |
+| 验证 | 先过记录质量门禁，再按 `source_url` 幂等写入；每批写入后按 URL 回读 |
+
+当前版本的事实源是本地数据库。飞书发布完成与否，以写入后的实际回读为准。
 
 <p align="center"><img src="assets/boards/01-collection-to-db.svg" alt="官方来源经过质量门禁后进入 Agent 数据库" width="960"></p>
 
@@ -56,8 +76,10 @@ config.example.json              脱敏后的来源配置示例
 references/data-contract.md      记录与状态契约
 references/source-adapters.md    MBB 站点适配器约定
 references/feishu-publish.md     飞书发布安全规则
+references/runtime.md            Agent 运行时契约
 scripts/validate_records.py      独立质量校验
 scripts/build_agent_db.py        JSON / CSV / SQLite 构建
+scripts/doctor.sh                安全的本地运行检查
 assets/boards/                   Geometry Blue 语义图示及源描述
 ```
 
