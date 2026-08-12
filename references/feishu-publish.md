@@ -7,7 +7,7 @@
 确认：
 
 1. 当前 profile 指向用户要求的租户。
-2. 身份为 `identity=user`，且用户 API 可用。
+2. 支持 `auth status --json --verify` 的环境必须确认 `identity=user`、`verified=true`。当前 CLI 构建若没有 `auth` 子命令，至少要用 `contact +get-user --as user` 解析当前用户并完成目标表只读确认；仅 `task +get-my-tasks` 这种 user-context canary 不足以执行发布。
 3. 目标 Base/Wiki、字段名和权限已读取确认。
 4. 本地 `manifest.json` 与待写入记录数一致。
 
