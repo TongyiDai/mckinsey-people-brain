@@ -31,13 +31,13 @@
 
 当前版本的事实源是本地数据库。飞书发布完成与否，以写入后的实际回读为准。
 
-<p align="center"><img src="assets/boards/01-collection-to-db.svg" alt="官方来源经过质量门禁后进入 Agent 数据库" width="960"></p>
+<p align="center"><img src="assets/boards/01-collection-to-db.svg?v=2" alt="官方来源经过质量门禁后进入 Agent 数据库" width="960"></p>
 
 ## 解决什么问题
 
 长期运行的人力研究，核心风险集中在来源混杂、正文缺失、重复抓取、内容不可追溯和回写重复。Skill 将官方来源采集、数据库构建、飞书发布拆开，每一步都留下可检查的运行产物。
 
-<p align="center"><img src="assets/boards/02-quality-gates.svg" alt="三层门禁决定资料能否被引用" width="960"></p>
+<p align="center"><img src="assets/boards/02-quality-gates.svg?v=2" alt="三层门禁决定资料能否被引用" width="960"></p>
 
 ## 快速开始
 
@@ -67,13 +67,13 @@ python3 scripts/build_agent_db.py \
 - 原始快照、清洗记录和数据库通过 `run_id`、manifest、source URL 连接。
 - 本地数据库是事实来源，飞书发布必须经过用户身份确认、dry-run 和写后回读。
 
-<p align="center"><img src="assets/boards/03-feishu-idempotency.svg" alt="source_url 让飞书回写可重跑" width="960"></p>
+<p align="center"><img src="assets/boards/03-feishu-idempotency.svg?v=2" alt="source_url 让飞书回写可重跑" width="960"></p>
 
 ## 内容主题
 
 默认主题包括人才战略与组织设计、AI 与未来工作、技能与学习、绩效与激励、People Analytics、员工体验与文化、领导力与管理、劳动力规划与招聘。主题用于检索和聚合，引用仍需回到原始来源 URL。
 
-<p align="center"><img src="assets/boards/04-evidence-loop.svg" alt="三类产物组成证据闭环" width="960"></p>
+<p align="center"><img src="assets/boards/04-evidence-loop.svg?v=2" alt="三类产物组成证据闭环" width="960"></p>
 
 ## 目录
 
